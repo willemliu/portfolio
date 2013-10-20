@@ -1,0 +1,89 @@
+<patTemplate:tmpl name="body">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xml>
+  <fileName>{FILE_NAME}</fileName>
+  <item>
+    <html>
+      &lt;div CLASS="WINDOW_BAR"&gt;
+        &lt;div class="WINDOW_TITLE"&gt;
+          Add Keyword
+        &lt;/div&gt;
+        &lt;a onClick="var fade = new MyFade(); fade.FadeOut('ADD_KEYWORD',0, 1, 'fade'); postData('window_close.php', '', 'window=ADD_KEYWORD');" onMouseDown="mouse.dispensemove();"&gt;
+          Close
+        &lt;/a&gt;
+      &lt;/div&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Movie: {FILM_TITLE}
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;br&gt;
+      &lt;input type="text" id="add_keyword_text" name="add_keyword_text" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('add_keyword').focus();"&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;td&gt;
+      &lt;input type="button" id="add_keyword" name="Add" value="Add" onClick="document.getElementById('add_keyword_id[]').options[document.getElementById('add_keyword_id[]').options.length] = new Option(document.getElementById('add_keyword_text').value, document.getElementById('add_keyword_text').value); document.getElementById('add_keyword_text').value = ''; document.getElementById('add_keyword_text').focus();" onMouseDown="mouse.dispensemove();"&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;br&gt;
+      &lt;select id="add_keyword_id[]" name="add_keyword_id[]" multiple="multiple" size="5" onDblClick="DeleteListItem('add_keyword_id[]');" onMouseDown="mouse.dispensemove();"&gt;
+    </html>
+  </item>
+  <patTemplate:tmpl name="show_selected_keyword" type="SimpleCondition" requiredVars="CONDITION">
+  <patTemplate:tmpl name="selected_keyword">
+  <item>
+    <html>
+      &lt;option value="{KEYWORD_ID}"&gt;{KEYWORD}&lt;/option&gt;
+    </html>
+  </item>
+  </patTemplate:tmpl>
+  </patTemplate:tmpl>
+  <item>
+    <html>
+      &lt;/select&gt;
+      &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;input type="button" name="Remove" value="Remove" onClick="DeleteListItem('add_keyword_id[]');" onMouseDown="mouse.dispensemove();"&gt;
+      &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;br&gt;
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;input type="button" id="add_keyword_add" name="add_keyword_add" value="Update" onClick="{UPDATE_COMMAND}" onMouseDown="mouse.dispensemove();"&gt;
+    </html>
+  </item>
+  <patTemplate:tmpl name="setTimeout">
+  <setTimeout>
+    <Command>{COMMAND}</Command>
+    <TimeOut>
+      {MILLISECONDS}
+    </TimeOut>
+  </setTimeout>
+  </patTemplate:tmpl>
+  <performance>
+    <parseTime>
+      {PARSE_TIME}
+    </parseTime>
+    <dbqueries>
+      {DB_QUERIES}
+    </dbqueries>
+  </performance>
+</xml>
+</patTemplate:tmpl>

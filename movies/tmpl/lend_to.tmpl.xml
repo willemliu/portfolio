@@ -1,0 +1,114 @@
+<patTemplate:tmpl name="body">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xml>
+  <fileName>{FILE_NAME}</fileName>
+  <item>
+    <html>
+      &lt;div CLASS="WINDOW_BAR"&gt;
+        &lt;div class="WINDOW_TITLE"&gt;
+          Lend To
+        &lt;/div&gt;
+        &lt;a onClick="var fade = new MyFade(); fade.FadeOut('LEND_TO',0, 1, 'fade'); postData('window_close.php', '', 'window=LEND_TO');" onMouseDown="mouse.dispensemove();"&gt;
+          Close
+        &lt;/a&gt;
+      &lt;/div&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Search: &lt;input type="text" id="lend_to_search_filter" name="lend_to_search_filter" value="{SEARCH_FILTER}" size="20" onMouseDown="mouse.dispensemove();" onKeyUp="if(KeyCheck(event, 13)) postData('lend_to.php', 'LEND_TO', 'search_filter=' + escape(encodeURI(document.getElementById('lend_to_search_filter').value)))"&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;input type="button" name="lend_to_search_button" value="Search" onClick="postData('lend_to.php', 'LEND_TO', 'search_filter=' + escape(encodeURI(document.getElementById('lend_to_search_filter').value)));"&gt;
+      &lt;br&gt;
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;table id="LEND_TO_TABLE" class="LEND_TO_TABLE" onMouseDown="mouse.dispensemove();"&gt;
+        &lt;tr&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="LEND_TO_TABLE_DATA"&gt;
+            Title
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="LEND_TO_TABLE_DATA"&gt;
+            Lend to
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+        &lt;/tr&gt;
+    </html>
+  </item>
+  <patTemplate:tmpl name="show_rows" type="SimpleCondition" requiredVars="CONDITION">
+  <patTemplate:tmpl name="rows">
+  <item>
+    <html>
+        &lt;tr&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="LEND_TO_TABLE_DATA"&gt;
+            &lt;font color="#FF0000"&gt;{TITLE}&lt;/font&gt;
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="LEND_TO_TABLE_DATA" style="display: {SHOW_LEND_TO};"&gt;
+            &lt;a onClick="postData('add_lend_to.php', 'ADD_LEND_TO', 'film_id=' + escape(encodeURI({ID})));" title="Add/Remove Lend To"&gt;[+/-]&lt;/a&gt;
+            &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+            {LEND_TO}
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+        &lt;/tr&gt;
+    </html>
+  </item>
+  </patTemplate:tmpl>
+  </patTemplate:tmpl>
+  <item>
+    <html>
+      &lt;/table&gt;
+    </html>
+  </item>
+  <patTemplate:tmpl name="setTimeout">
+  <setTimeout>
+    <Command>{COMMAND}</Command>
+    <TimeOut>
+      {MILLISECONDS}
+    </TimeOut>
+  </setTimeout>
+  </patTemplate:tmpl>
+  <performance>
+    <parseTime>
+      {PARSE_TIME}
+    </parseTime>
+    <dbqueries>
+      {DB_QUERIES}
+    </dbqueries>
+  </performance>
+</xml>
+</patTemplate:tmpl>

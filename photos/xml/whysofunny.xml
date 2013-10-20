@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+xmlns:content="http://purl.org/rss/1.0/modules/content/"
+xmlns:atom="http://www.w3.org/2005/Atom"
+version="2.0">
+  <channel>
+    <title>Photos - Willem Liu</title>
+    <link>http://www.willemliu.nl/photos/</link>
+    <description>De RSS feed of Photos</description>
+    <pubDate>Wed, 12 Jun 2013 22:34:00 +0200</pubDate>
+    <generator>http://www.willemliu.nl/photos/</generator>
+    <language>en-US</language>
+    <copyright>2013 willemliu.nl</copyright>
+    <managingEditor>willem_liu@hotmail.com (Webmaster)</managingEditor>
+    <webMaster>willem_liu@hotmail.com (Webmaster)</webMaster>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <category>Comedy</category>
+    <ttl>10</ttl>
+    <atom:link href="http://www.willemliu.nl/photos/xml/whysofunny.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <title>Photos - Willem Liu</title>
+      <url>http://www.willemliu.nl/img/me.jpg</url>
+      <link>http://www.willemliu.nl/photos/</link>
+    </image>
+    <item>
+      <title><![CDATA[Valencia, 18 November 2012]]></title>
+      <link>http://www.willemliu.nl/photos/item.php?guid=wsf1829</link>
+      <comments>http://www.willemliu.nl/photos/item.php?guid=wsf1829</comments>
+      <pubDate>Sun, 18 Nov 2012 00:00:00 +0200</pubDate>
+      <description><![CDATA[
+          Frontman of Velvvet standing in front of the museum of arts and sciences in Valencia.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1829</guid>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/DSC_9164-2.jpg" length="0" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Mid-winter BBQ, 23 Januari 2012]]></title>
+      <link>http://www.willemliu.nl/photos/item.php?guid=wsf1828</link>
+      <comments>http://www.willemliu.nl/photos/item.php?guid=wsf1828</comments>
+      <pubDate>Mon, 23 Jan 2012 00:00:00 +0200</pubDate>
+      <description><![CDATA[
+          BBQ in the midst of winter at De Duiventil, Purmerend.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1828</guid>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/DSC_6599.jpg" length="0" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Velvvet photoshoot, 08 Januari 2012]]></title>
+      <link>http://www.willemliu.nl/photos/item.php?guid=wsf1827</link>
+      <comments>http://www.willemliu.nl/photos/item.php?guid=wsf1827</comments>
+      <pubDate>Sun, 08 Jan 2012 00:00:00 +0200</pubDate>
+      <description><![CDATA[
+          Photoshoot at Central Station, Amsterdam.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1827</guid>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/DSC_6400.jpg" length="0" type="image/jpeg"/>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/DSC_6473.jpg" length="0" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[New years day, 01 Januari 2012]]></title>
+      <link>http://www.willemliu.nl/photos/item.php?guid=wsf1826</link>
+      <comments>http://www.willemliu.nl/photos/item.php?guid=wsf1826</comments>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0200</pubDate>
+      <description><![CDATA[
+          This photo was taken on new years eve. We were having fun lighting young children firework. Purmerend.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1826</guid>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/DSC_6342.jpg" length="0" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Saint Suliac, 13 July 2011]]></title>
+      <link>http://www.willemliu.nl/photos/item.php?guid=wsf1825</link>
+      <comments>http://www.willemliu.nl/photos/item.php?guid=wsf1825</comments>
+      <pubDate>Wed, 13 Jul 2011 00:00:00 +0200</pubDate>
+      <description><![CDATA[
+          This photo was taken in Saint Suliac, France.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1825</guid>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/DSC_4435.jpg" length="0" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Highway from Strasbourg to The Netherlands, 25 April 2011]]></title>
+      <link>http://www.willemliu.nl/photos/item.php?guid=wsf1824</link>
+      <comments>http://www.willemliu.nl/photos/item.php?guid=wsf1824</comments>
+      <pubDate>Mon, 25 Apr 2011 00:00:00 +0200</pubDate>
+      <description><![CDATA[
+          This photo was shot at during the drive back home after a terrific weekend in Strasbourg.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1824</guid>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/DSC_3246.jpg" length="0" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Velvvet photoshoot, 23 Januari 2011]]></title>
+      <link>http://www.willemliu.nl/photos/item.php?guid=wsf1823</link>
+      <comments>http://www.willemliu.nl/photos/item.php?guid=wsf1823</comments>
+      <pubDate>Sun, 23 Jan 2011 00:00:00 +0200</pubDate>
+      <description><![CDATA[
+          Photoshoot at the home of the lead-singer, Wijdewormer. The house was under severe renovation at the time.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1823</guid>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/IMG_2791.jpg" length="0" type="image/jpeg"/>
+    </item>
+    <item>
+      <title><![CDATA[Various gig photos]]></title>
+      <link>http://www.willemliu.nl/photos/item.php?guid=wsf1822</link>
+      <comments>http://www.willemliu.nl/photos/item.php?guid=wsf1822</comments>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0200</pubDate>
+      <description><![CDATA[
+          Various photos of gigs in the Netherlands. Sadly I lost the originals of the album of the last photo.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1822</guid>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/DSC_9296-2.jpg" length="0" type="image/jpeg"/>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/DSC_9517.jpg" length="0" type="image/jpeg"/>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/DSC_9731.jpg" length="0" type="image/jpeg"/>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/DSC_9734.jpg" length="0" type="image/jpeg"/>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/DSC_9999.jpg" length="0" type="image/jpeg"/>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/DSC_0002.jpg" length="0" type="image/jpeg"/>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/DSC_0055.jpg" length="0" type="image/jpeg"/>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/338778_10151032595395050_1761359559_o.jpg" length="0" type="image/jpeg"/>
+    </item>
+  </channel>
+</rss>

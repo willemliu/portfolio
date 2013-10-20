@@ -1,0 +1,347 @@
+<patTemplate:tmpl name="body">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>
+      My Movie Collection
+    </title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="google-site-verification" content="BDcFvmHVityyOGjXoPLuuZCRqX-PYEDXEEDpFmnRMy4" />
+    <style type="text/css">
+      <!--
+      <patTemplate:tmpl name="Stylesheet" src="../stylesheet.css"/>
+      -->
+    </style>
+    <script type="Text/Javascript">
+      <patTemplate:tmpl name="MyMouse" src="../MyMouse.js"/>
+    </script>
+    <script type="Text/Javascript">
+      <patTemplate:tmpl name="MyAjax" src="../MyAjax.js"/>
+    </script>
+    <script type="Text/Javascript">
+      <patTemplate:tmpl name="MyFade" src="../MyFade.js"/>
+    </script>
+    <script type="Text/Javascript">
+      var debugMode = false;
+    	var mouse = new MyMousePosition();
+    	mouse.debugOn(false);
+    	//mouse.setMoveIncrement(5);
+    	//mouse.setSingleClickMove(true);
+    	var loading_timeout;
+    	var loading_objects = 0;
+    	var startX = 0;
+    	var startY = 0;
+    	
+    	function init(){
+        getData('login.php', 'LOGIN');
+    	}
+    	
+    	function setLoading(){
+    	  document.getElementById('LOADING_ICON').style.display = "block";
+    	  loading_objects++;
+    	  clearTimeout(loading_timeout);
+    	  loading_timeout = setTimeout("setDoneLoading(true)", 5000);
+    	}
+
+    	function setDoneLoading(timedOut){
+    	  loading_objects = 0;
+    	  document.getElementById('LOADING_ICON').style.display = "none";
+    	  if(timedOut){
+          //==============================================================
+          //DEBUG START
+          //==============================================================
+          //Following lines are to output the received response for debugging purpose
+          if(debugMode){
+            document.getElementById('DEBUG').style.display = "block";
+            var debug = document.getElementById('DEBUG_TEXTAREA');
+            debug.value += "\n=========ERROR==========\n";
+            debug.value += "Loading timed out";
+            debug.value += "\n========ERROR END=======\n";
+            if(debug.setSelectionRange)
+            {
+            	debug.setSelectionRange(debug.value.length,debug.value.length);
+              debug.scrollTop = debug.scrollHeight;
+            }
+            else if (debug.createTextRange) {
+            	var range = debug.createTextRange();
+            	range.collapse(true);
+            	range.moveEnd('character', debug.value.length);
+            	range.moveStart('character', debug.value.length);
+            	range.select();
+            }
+          }
+          //==============================================================
+          //DEBUG END
+          //==============================================================
+    	  } else{
+      	  clearTimeout(loading_timeout);
+    	  }
+    	}
+    	
+      function getData(page, id){
+        setLoading();
+        var ajx = new MyAjax(true);
+        ajx.setID(id);
+      	ajx.getXMLDoc(page, XMLparser);
+      }
+
+      function postData(page, id, params){
+        setLoading();
+        //==============================================================
+        //DEBUG START
+        //==============================================================
+        //Following lines are to output the received response for debugging purpose
+        if(debugMode){
+          document.getElementById('DEBUG').style.display = "block";
+          var debug = document.getElementById('DEBUG_TEXTAREA');
+          debug.value += "\n==========SEND==========\n";
+          debug.value += params;
+          debug.value += "\n==========SEND END======\n";
+          if(debug.setSelectionRange)
+          {
+          	debug.setSelectionRange(debug.value.length,debug.value.length);
+            debug.scrollTop = debug.scrollHeight;
+          }
+          else if (debug.createTextRange) {
+          	var range = debug.createTextRange();
+          	range.collapse(true);
+          	range.moveEnd('character', debug.value.length);
+          	range.moveStart('character', debug.value.length);
+          	range.select();
+          }
+        }
+        //==============================================================
+        //DEBUG END
+        //==============================================================
+
+        var ajx = new MyAjax(true);
+        ajx.setID(id);
+        if(document.all){
+          //Needed for IE to avoid the zombie XMLHttpRequest port bug.
+          //dummy.php returns a empty XML document
+          ajx.getXMLDoc('dummy.php', XMLparser);
+        }
+      	ajx.postXMLDoc(page, params, XMLparser);
+      }
+
+      function XMLparser(ajax){
+        var req = ajax.getReq();
+        if(req){
+          if (req.readyState == 4) {
+            if (req.status == 200) {
+              if(req.responseXML){
+                loading_objects--;
+                //==============================================================
+                //DEBUG START
+                //==============================================================
+                //Following lines are to output the received response for debugging purpose
+                if(debugMode){
+                  document.getElementById('DEBUG').style.display = "block";
+                  var debug = document.getElementById('DEBUG_TEXTAREA');
+                  debug.value += "\n========RECEIVE=========\n";
+                  debug.value += req.responseText;
+                  debug.value += "========RECEIVE END=====\n";
+                  if(debug.setSelectionRange)
+                  {
+                  	debug.setSelectionRange(debug.value.length,debug.value.length);
+                    debug.scrollTop = debug.scrollHeight;
+                  }
+                  else if (debug.createTextRange) {
+                  	var range = debug.createTextRange();
+                  	range.collapse(true);
+                  	range.moveEnd('character', debug.value.length);
+                  	range.moveStart('character', debug.value.length);
+                  	range.select();
+                  }
+                }
+                //==============================================================
+                //DEBUG END
+                //==============================================================
+
+                var item_length = req.responseXML.getElementsByTagName("item").length;
+                var html = "";
+                for(var i = 0; i < item_length; i++){
+                  var item = req.responseXML.getElementsByTagName("item")[i];
+                  html += ajax.getElementTextNS("", "html", item, 0);
+                }
+                //Remove unwanted new line characters
+                html = html.replace(/\r/g, "");
+                html = html.replace(/\n/g, "");
+                if(ajax.getID() != ""){
+                  document.getElementById(ajax.getID()).innerHTML = html;
+                }
+
+                //Extra commands from server
+                item_length = req.responseXML.getElementsByTagName("setTimeout").length;
+                for(var i = 0; i < item_length; i++){
+                  var item = req.responseXML.getElementsByTagName("setTimeout")[i];
+                  var Command = ajax.getElementTextNS("", "Command", item, 0);
+                  //Remove unwanted new line characters
+                  Command = Command.replace(/\r/g, "");
+                  Command = Command.replace(/\n/g, "");
+                  var TimeOut = parseInt(ajax.getElementTextNS("", "TimeOut", item, 0), 10);
+                  var func = setTimeout(Command, TimeOut);
+                }
+              }
+            } else {
+              //==============================================================
+              //DEBUG START
+              //==============================================================
+              //Following lines are to output the received response for debugging purpose
+              if(debugMode){
+                document.getElementById('DEBUG').style.display = "block";
+                var debug = document.getElementById('DEBUG_TEXTAREA');
+                debug.value += "\n=========ERROR==========\n";
+                debug.value += "There was a problem retrieving the XML data:\n" + 
+                req.status + "\n" + req.statusText;
+                debug.value += "\n========ERROR END=======\n";
+                if(debug.setSelectionRange)
+                {
+                	debug.setSelectionRange(debug.value.length,debug.value.length);
+                  debug.scrollTop = debug.scrollHeight;
+                }
+                else if (debug.createTextRange) {
+                	var range = debug.createTextRange();
+                	range.collapse(true);
+                	range.moveEnd('character', debug.value.length);
+                	range.moveStart('character', debug.value.length);
+                	range.select();
+                }
+              }
+              //==============================================================
+              //DEBUG END
+              //==============================================================
+            }
+          }
+        }
+        if(loading_objects == 0){
+          setDoneLoading(false);
+        }
+      }
+      
+      function KeyCheck(e, id){
+        var KeyID = (window.event) ? event.keyCode : e.keyCode;
+        if(KeyID == id)
+            return true;
+        //==============================================================
+        //DEBUG START
+        //==============================================================
+        if(debugMode){
+          if(KeyID == 123) //If F12 empty debug log
+            document.getElementById('DEBUG_TEXTAREA').value = '';
+          //document.getElementById('DEBUG').style.display = "block";
+          //var debug = document.getElementById('DEBUG_TEXTAREA');
+          //debug.value += "\n========KEY TYPED=======\n";
+          //debug.value += KeyID;
+          //debug.value += "\n========KEY TYPED END===\n";
+        }
+        //==============================================================
+        //DEBUG END
+        //==============================================================
+        return false;
+      }
+      
+      function setLoadingIconPosition(){
+        document.getElementById('LOADING_ICON').style.left = mouse.getXMousePos() + 15 + "px";
+        document.getElementById('LOADING_ICON').style.top = mouse.getYMousePos() + 15 + "px";
+      }
+      
+      function ArrayToUrl(id){
+        var len = document.getElementById(id).options.length;
+        var str = "";
+        for(var i = 0; i < len; ++i){
+          if(document.getElementById(id).options[i].selected){
+            str += "&" + id + "=" + escape(encodeURI(document.getElementById(id).options[i].value));
+          }
+        }
+        return str;
+      }
+
+      function ListToUrl(id){
+        var len = document.getElementById(id).options.length;
+        var str = "";
+        for(var i = 0; i < len; ++i){
+          str += "&" + id + "=" + escape(encodeURI(document.getElementById(id).options[i].value));
+        }
+        return str;
+      }
+      
+      function MoveListItem(from, to){
+        var from_length = document.getElementById(from).options.length;
+        var from_deletes = Array();
+        for(var i = 0; i < from_length; ++i){
+          if(document.getElementById(from).options[i].selected){
+            var text = document.getElementById(from).options[i].text;
+            var val = document.getElementById(from).options[i].value;
+            
+            //copy the item
+            document.getElementById(to).options[document.getElementById(to).options.length] = new Option(text, val);
+            
+            from_deletes[from_deletes.length] = i;
+          }
+        }
+        
+        //Delete the copied item(s)
+        var delete_length = from_deletes.length;
+        for(var i = delete_length; i >= 0; --i){
+          document.getElementById(from).options[from_deletes[i]] = null;
+        }
+      }
+
+      function DeleteListItem(from){
+        var from_length = document.getElementById(from).options.length;
+        var from_deletes = Array();
+        for(var i = 0; i < from_length; ++i){
+          if(document.getElementById(from).options[i].selected){
+            from_deletes[from_deletes.length] = i;
+          }
+        }
+        
+        //Delete the copied item(s)
+        var delete_length = from_deletes.length;
+        for(var i = delete_length; i >= 0; --i){
+          document.getElementById(from).options[from_deletes[i]] = null;
+        }
+      }
+      
+      function startMove(x, y){
+        startX = x;
+        startY = y;
+      }
+      
+      function IsMoved(x, y){
+        if(startX != x || startY != y){
+          return true;
+        }
+        return false;
+      }
+
+      function getElementsByClassName( strClassName, obj ){
+        var ar = arguments[2] || new Array();
+        var re = new RegExp("\\b" + strClassName + "\\b", "g");
+    
+        if(re.test(obj.className)){
+          ar.push( obj );
+        }
+        for (var i = 0; i < obj.childNodes.length; i++)
+          getElementsByClassName(strClassName, obj.childNodes[i], ar);
+        
+        return ar;
+      }
+
+      function updateStylesheets(classname, value){
+        var classObjects = getElementsByClassName(classname, document.body);
+      	var classArraySize = classObjects.length;
+      	for(var i = 0; i < classArraySize; i++){
+      	  classObjects[i].style.color = value;
+      	}
+      }
+    </script>
+  </head>
+  <body onLoad="init();" onMouseMove="setLoadingIconPosition();">
+    <patTemplate:tmpl name="containers">
+      {CONTAINER}
+    </patTemplate:tmpl>
+  </body>
+</html>
+</patTemplate:tmpl>

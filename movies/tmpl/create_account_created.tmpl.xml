@@ -1,0 +1,26 @@
+<patTemplate:tmpl name="body">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xml>
+  <fileName>{FILE_NAME}</fileName>
+  <item>
+    <html>
+      &lt;div CLASS="WINDOW_BAR"&gt;
+        &lt;div class="WINDOW_TITLE"&gt;
+          Create Account
+        &lt;/div&gt;
+      &lt;/div&gt;
+    </html>
+  </item>
+  <item>
+    <html>{INFORMATION}</html>
+  </item>
+  <patTemplate:tmpl name="setTimeout">
+  <setTimeout>
+    <Command>{COMMAND}</Command>
+    <TimeOut>
+      {MILLISECONDS}
+    </TimeOut>
+  </setTimeout>
+  </patTemplate:tmpl>
+</xml>
+</patTemplate:tmpl>

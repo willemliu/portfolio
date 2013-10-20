@@ -1,0 +1,41 @@
+<patTemplate:tmpl name="body">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xml>
+  <fileName>{FILE_NAME}</fileName>
+  <item>
+    <html>
+      &lt;div CLASS="WINDOW_BAR"&gt;
+        &lt;div class="WINDOW_TITLE"&gt;
+          Information
+        &lt;/div&gt;
+      &lt;/div&gt;
+    </html>
+  </item>
+  <item>
+    <html>Welcome.
+    &lt;br&gt;
+    &lt;br&gt;
+    This is a personal movie database.
+    &lt;br&gt;
+    With this webapplication everyone can keep track of their own movie collection.
+    This website is fast and easy to use.
+    &lt;br&gt;
+    &lt;br&gt;
+    Create an account and you can add movies to the database and add as many details to the movie as you see fit.
+    &lt;br&gt;
+    &lt;br&gt;
+    Such details are for instance: actors, directors, screen size, surround sound definition, language of subtitles, trailers and many many more.
+    &lt;br&gt;
+    You can even keep track to whom you've lend out your movies.
+    </html>
+  </item>
+  <patTemplate:tmpl name="setTimeout">
+  <setTimeout>
+    <Command>{COMMAND}</Command>
+    <TimeOut>
+      {MILLISECONDS}
+    </TimeOut>
+  </setTimeout>
+  </patTemplate:tmpl>
+</xml>
+</patTemplate:tmpl>

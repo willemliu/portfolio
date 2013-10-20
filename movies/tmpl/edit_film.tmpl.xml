@@ -1,0 +1,86 @@
+<patTemplate:tmpl name="body">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xml>
+  <fileName>{FILE_NAME}</fileName>
+  <item>
+    <html>
+      &lt;div CLASS="WINDOW_BAR"&gt;
+        &lt;div class="WINDOW_TITLE"&gt;
+          Edit Film
+        &lt;/div&gt;
+        &lt;a onClick="var fade = new MyFade(); fade.FadeOut('EDIT_FILM',0, 1, 'fade'); postData('window_close.php', '', 'window=EDIT_FILM');" onMouseDown="mouse.dispensemove();"&gt;
+          Close
+        &lt;/a&gt;
+      &lt;/div&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Title:
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;input type="text" id="edit_film_title" name="edit_film_title" size="50" value="{TITLE}" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('edit_film_save').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Duration in minutes:
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;input type="text" id="edit_film_duration" name="edit_film_duration" size="5" value="{DURATION}" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('edit_film_save').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Color:
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;select id="edit_film_color_id" name="edit_film_color_id" onMouseDown="mouse.dispensemove();"&gt;
+    </html>
+  </item>
+  <patTemplate:tmpl name="color">
+  <item>
+    <html>
+      &lt;option value="{COLOR_ID}" {SELECTED}&gt;{COLOR_NAME}&lt;/option&gt;
+    </html>
+  </item>
+  </patTemplate:tmpl>
+  <item>
+    <html>
+      &lt;/select&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;input type="hidden" id="edit_film_id" name="edit_film_id" value="{FILM_ID}" onMouseDown="mouse.dispensemove();"&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;input type="button" id="edit_film_save" name="edit_film_save" value="Save" onMouseDown="mouse.dispensemove();" onClick="{UPDATE_COMMAND}"&gt;
+    </html>
+  </item>
+  <patTemplate:tmpl name="setTimeout">
+  <setTimeout>
+    <Command>{COMMAND}</Command>
+    <TimeOut>
+      {MILLISECONDS}
+    </TimeOut>
+  </setTimeout>
+  </patTemplate:tmpl>
+</xml>
+</patTemplate:tmpl>

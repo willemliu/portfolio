@@ -1,0 +1,118 @@
+<patTemplate:tmpl name="body">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xml>
+  <fileName>{FILE_NAME}</fileName>
+  <item>
+    <html>
+      &lt;div CLASS="WINDOW_BAR"&gt;
+        &lt;div class="WINDOW_TITLE"&gt;
+          Members List
+        &lt;/div&gt;
+        &lt;a onClick="var fade = new MyFade(); fade.FadeOut('MEMBERS_LIST',0, 1, 'fade'); postData('window_close.php', '', 'window=MEMBERS_LIST');" onMouseDown="mouse.dispensemove();"&gt;
+          Close
+        &lt;/a&gt;
+      &lt;/div&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Search: &lt;input type="text" id="members_list_search_filter" name="members_list_search_filter" value="{SEARCH_FILTER}" size="20" onMouseDown="mouse.dispensemove();" onKeyUp="if(KeyCheck(event, 13)) postData('search_members_list.php', 'MEMBERS_LIST', 'search_filter=' + escape(encodeURI(document.getElementById('members_list_search_filter').value)))"&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;input type="button" name="members_list_search_button" value="Search" onClick="postData('search_members_list.php', 'MEMBERS_LIST', 'search_filter=' + escape(encodeURI(document.getElementById('members_list_search_filter').value)));"&gt;
+      &lt;br&gt;
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;table class="MEMBERS_LIST_TABLE" onMouseDown="mouse.dispensemove();"&gt;
+        &lt;tr&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBERS_LIST_TABLE_DATA" style="display: {SHOW_NICK_NAME};"&gt;
+            Nick name
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBERS_LIST_TABLE_DATA" style="display: {SHOW_FILMS_TOTAL};"&gt;
+            Films Total
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBERS_LIST_TABLE_DATA" style="display: {SHOW_COMPARISON};"&gt;
+            Library Compare
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+        &lt;/tr&gt;
+    </html>
+  </item>
+  <patTemplate:tmpl name="show_rows" type="SimpleCondition" requiredVars="CONDITION">
+  <patTemplate:tmpl name="rows">
+  <item>
+    <html>
+        &lt;tr&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBERS_LIST_TABLE_DATA" style="display: {SHOW_NICK_NAME};"&gt;
+            {NICK_NAME}
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBERS_LIST_TABLE_DATA" style="display: {SHOW_FILMS_TOTAL}; cursor: pointer;" onClick="postData('member_films.php', 'MEMBER_FILMS', 'member_id=' + escape(encodeURI({ID})));"&gt;
+            {FILMS_TOTAL}
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBERS_LIST_TABLE_DATA" style="display: {SHOW_COMPARISON}; cursor: pointer;" onClick="postData('member_films.php', 'MEMBER_FILMS', 'member_id=' + escape(encodeURI({ID})));"&gt;
+            {LIBRARY_COMPARE}
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+        &lt;/tr&gt;
+    </html>
+  </item>
+  </patTemplate:tmpl>
+  </patTemplate:tmpl>
+  <item>
+    <html>
+      &lt;/table&gt;
+    </html>
+  </item>
+  <patTemplate:tmpl name="setTimeout">
+  <setTimeout>
+    <Command>{COMMAND}</Command>
+    <TimeOut>
+      {MILLISECONDS}
+    </TimeOut>
+  </setTimeout>
+  </patTemplate:tmpl>
+  <performance>
+    <parseTime>
+      {PARSE_TIME}
+    </parseTime>
+    <dbqueries>
+      {DB_QUERIES}
+    </dbqueries>
+  </performance>
+</xml>
+</patTemplate:tmpl>

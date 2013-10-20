@@ -1,0 +1,10 @@
+# www.robotstxt.org/
+# www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
+
+User-agent: *
+Disallow: /css
+Disallow: /js
+Disallow: /img
+Disallow: /tmpl
+Disallow: /games
+Disallow: /qt

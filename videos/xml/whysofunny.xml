@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+xmlns:content="http://purl.org/rss/1.0/modules/content/"
+xmlns:atom="http://www.w3.org/2005/Atom"
+version="2.0">
+  <channel>
+    <title>Videos - Willem Liu</title>
+    <link>http://www.willemliu.nl/videos/</link>
+    <description>De RSS feed of Videos</description>
+    <pubDate>Wed, 12 Jun 2013 22:34:00 +0200</pubDate>
+    <generator>http://www.willemliu.nl/videos/</generator>
+    <language>en-US</language>
+    <copyright>2013 willemliu.nl</copyright>
+    <managingEditor>willem_liu@hotmail.com (Webmaster)</managingEditor>
+    <webMaster>willem_liu@hotmail.com (Webmaster)</webMaster>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <category>Comedy</category>
+    <ttl>10</ttl>
+    <atom:link href="http://www.willemliu.nl/videos/xml/whysofunny.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <title>Videos - Willem Liu</title>
+      <url>http://www.willemliu.nl/img/me.jpg</url>
+      <link>http://www.willemliu.nl/videos/</link>
+    </image>
+    <item>
+      <title><![CDATA[Wedding Bo & Jaron, 08 May 2013]]></title>
+      <link>http://www.willemliu.nl/videos/item.php?guid=wsf1829</link>
+      <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1829</comments>
+      <pubDate>Thu, 13 Jun 2013 23:43:00 +0200</pubDate>
+      <description><![CDATA[
+        Wedding of Bo & Jaron.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        <div class="row">
+          <div class="large-6 columns">
+            <hr class="show-for-small"/>
+            <div><small>Music by: Jefferson Starship</small></div>
+            <div><small>Song: Nothing's Gonna Stop Us Now</small></div>
+          </div>
+          <div class="large-6 columns">
+            <hr class="show-for-small"/>
+            <div><small>Music by: Lauren Rose</small></div>
+            <div><small>Song: Hava Nagila (Baby Let's Dance)</small></div>
+          </div>
+        </div>
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1829</guid>
+      <enclosure url="http://www.youtube.com/embed/mnzjakRmeHY" length="0" type="html/youtube-url"/>
+    </item>
+    <item>
+      <title><![CDATA[Bachelorparty Jaron, 06 April 2013]]></title>
+      <link>http://www.willemliu.nl/videos/item.php?guid=wsf1828</link>
+      <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1828</comments>
+      <pubDate>Thu, 13 Jun 2013 23:43:00 +0200</pubDate>
+      <description><![CDATA[
+        One of my friends is getting married on the 8th of May 2013. So we threw a bachelorparty for him.<br/>
+        He only had one request for his party. The dresscode is: moustache!
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        <div class="row">
+          <div class="large-3 columns">
+            <hr class="show-for-small"/>
+            <div><small>Music by: The Proclaimers</small></div>
+            <div><small>Song: I'm gonna be (500 miles)</small></div>
+          </div>
+          <div class="large-3 columns">
+            <hr class="show-for-small"/>
+            <div><small>Music by: Salt-N-Pepa</small></div>
+            <div><small>Song: Whatta man</small></div>
+          </div>
+          <div class="large-3 columns">
+            <hr class="show-for-small"/>
+            <div><small>Music by: The Rolling Stones</small></div>
+            <div><small>Song: Paint it black</small></div>
+          </div>
+          <div class="large-3 columns">
+            <hr class="show-for-small"/>
+            <div><small>Music by: Johannes Brahms</small></div>
+            <div><small>Song: Wiegenlied: Guten Abend, gute Nacht</small></div>
+          </div>
+        </div>
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1828</guid>
+      <enclosure url="http://player.vimeo.com/video/64192396" length="0" type="html/vimeo-url"/>
+    </item>
+    <item>
+      <title><![CDATA[Sinterkerst, 14 December 2012]]></title>
+      <link>http://www.willemliu.nl/videos/item.php?guid=wsf1827</link>
+      <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1827</comments>
+      <pubDate>Thu, 13 Jun 2013 23:35:00 +0200</pubDate>
+      <description><![CDATA[
+          Between the Dutch holiday called Sinterklaas and Christmas my friends and I went away for the weekend.<br/>
+          During that weekend we enjoyed each others company while playing many boardgames.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        <hr class="show-for-small"/>
+        <div><small>Music by: Alan Jackson</small></div>
+        <div><small>Song: Let it be christmas</small></div>
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1827</guid>
+      <enclosure url="http://player.vimeo.com/video/55960336" length="0" type="html/vimeo-url"/>
+    </item>
+    <item>
+      <title><![CDATA[KOLO @ P3 Purmerend, The Netherlands, 30 November 2012]]></title>
+      <link>http://www.willemliu.nl/videos/item.php?guid=wsf1826</link>
+      <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1826</comments>
+      <pubDate>Thu, 13 Jun 2013 23:23:00 +0200</pubDate>
+      <description><![CDATA[
+        Video impression of KOLO performing in P3 Purmerend, The Netherlands.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        <hr class="show-for-small"/>
+        <div><small>Music by: <a href="http://www.kolo-band.com/" rel="nofollow" target="_BLANK">KOLO</a></small></div>
+        <div><small>Song: Castro</small></div>
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1826</guid>
+      <enclosure url="http://www.youtube.com/embed/zN6OfzpCGPU" length="0" type="html/youtube-url"/>
+    </item>
+    <item>
+      <title><![CDATA[Cooking with Ming, 08 August 2012]]></title>
+      <link>http://www.willemliu.nl/videos/item.php?guid=wsf1825</link>
+      <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1825</comments>
+      <pubDate>Thu, 13 Jun 2013 23:17:00 +0200</pubDate>
+      <description><![CDATA[
+        During our holiday in Budapest, Hungary we made a little parody on modern cooking shows.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        <hr class="show-for-small"/>
+        <div><small>Music by: Yurima</small></div>
+        <div><small>Song: River flows in you</small></div>
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1825</guid>
+      <enclosure url="http://player.vimeo.com/video/49065662" length="0" type="html/vimeo-url"/>
+    </item>
+    <item>
+      <title><![CDATA[Budapest, 08 August 2012]]></title>
+      <link>http://www.willemliu.nl/videos/item.php?guid=wsf1824</link>
+      <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1824</comments>
+      <pubDate>Thu, 13 Jun 2013 17:36:00 +0200</pubDate>
+      <description><![CDATA[
+        Three friends and I went to grace Budapest, Hungary with our presence.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        <hr class="show-for-small"/>
+        <div><small>Music by: The Rolling Stones</small></div>
+        <div><small>Song: She's a rainbow</small></div>
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1824</guid>
+      <enclosure url="http://player.vimeo.com/video/47614827" length="0" type="html/vimeo-url"/>
+    </item>
+    <item>
+      <title><![CDATA[Velvvet @ NH-Pop Live, 23 June 2012]]></title>
+      <link>http://www.willemliu.nl/videos/item.php?guid=wsf1823</link>
+      <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1823</comments>
+      <pubDate>Thu, 13 Jun 2013 17:23:00 +0200</pubDate>
+      <description><![CDATA[
+        Announcement of Velvvet to be amongst the five best bands out of 16.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        <hr class="show-for-small"/>
+        <div><small>Music by: Coldplay</small></div>
+        <div><small>Song: Fix you</small></div>
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1823</guid>
+      <enclosure url="http://player.vimeo.com/video/44607111" length="0" type="html/vimeo-url"/>
+    </item>
+    <item>
+      <title><![CDATA[Velvvet @ NH-Pop Live, 03 June 2011]]></title>
+      <link>http://www.willemliu.nl/videos/item.php?guid=wsf1822</link>
+      <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1822</comments>
+      <pubDate>Thu, 13 Jun 2013 16:22:00 +0200</pubDate>
+      <description><![CDATA[
+        Velvvet took us to one of their gigs with a tourbus!
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        <hr class="show-for-small"/>
+        <div><small>Music by: <a href="http://www.velvvet.com" target="_BLANK" rel="nofollow">Velvvet</a></small></div>
+        <div><small>Song: Hardest to switch</small></div>
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1822</guid>
+      <enclosure url="http://www.youtube.com/embed/7vb8_rEV2A4" length="0" type="html/youtube-url"/>
+    </item>
+  </channel>
+</rss>

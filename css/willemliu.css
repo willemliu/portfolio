@@ -1,0 +1,92 @@
+.liu {
+  font-size: 1.7em;
+  padding: 0 1em;
+  font-family: "KaiTi","Arial";
+}
+
+.top-bar {
+  margin-bottom: 0;
+}
+
+.top-bar-dummy {
+  height: 45px;
+}
+
+footer {
+  background-color: #111111;
+  padding-top: 1em;
+}
+
+.footerHeader {
+  color: white;
+}
+
+.footerText {
+  color: white;
+}
+
+.topInnerShadow {
+	-webkit-box-shadow: inset 0 8px 6px -6px black;
+  -moz-box-shadow: inset 0 8px 6px -6px black;
+  box-shadow: inset 0 8px 6px -6px black;
+}
+.paddingBottom {
+  padding-bottom: 1em;
+}
+
+/**
+ * Lifted shadow corners.
+ */
+.lifted {
+	border-radius:0px;
+	position:relative;
+	padding:1em;
+	background:#fcfcfc;
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+	-o-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.2);
+}
+
+.lifted:before, .lifted:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	-ms-transform: skew(0deg,-4deg);
+	-webkit-transform: skew(0deg,-4deg); /* Safari and Chrome */
+	-o-transform: skew(0deg,-4deg); /* Opera */
+	-moz-transform: skew(0deg,-4deg); /* Firefox */
+	bottom: 16px;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.3);
+	height: 50px;
+	left: 5px;
+	max-width: 50%;
+	width: 50%;
+}
+.lifted:after {
+
+	-ms-transform: skew(0deg,4deg); /* IE 9 */
+	-webkit-transform: skew(0deg,4deg); /* Safari and Chrome */
+	-o-transform: skew(0deg,4deg); /* Opera */
+	-moz-transform: skew(0deg,4deg); /* Firefox */
+	left: auto;
+	right: 5px;
+}
+
+/**
+ * Responsive video container.
+ */
+.video-container {
+     position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}

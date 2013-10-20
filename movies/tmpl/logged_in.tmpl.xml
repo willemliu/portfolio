@@ -1,0 +1,21 @@
+<patTemplate:tmpl name="body">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xml>
+  <fileName>{FILE_NAME}</fileName>
+  <item>
+    <html>
+      Welcome, {NICK_NAME}!
+      &lt;input type="button" id="logout_button" name="Logout" value="Log Out" onMouseDown="mouse.dispensemove();" onClick="
+      getData('logout.php', 'LOGIN');"&gt;
+    </html>
+  </item>
+  <patTemplate:tmpl name="setTimeout">
+  <setTimeout>
+    <Command>{COMMAND}</Command>
+    <TimeOut>
+      {MILLISECONDS}
+    </TimeOut>
+  </setTimeout>
+  </patTemplate:tmpl>
+</xml>
+</patTemplate:tmpl>

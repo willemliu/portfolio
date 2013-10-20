@@ -1,0 +1,50 @@
+<patTemplate:tmpl name="body">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xml>
+  <fileName>{FILE_NAME}</fileName>
+  <item>
+    <html>
+      &lt;div CLASS="WINDOW_BAR"&gt;
+        &lt;div class="WINDOW_TITLE"&gt;
+          Retrieve Account
+        &lt;/div&gt;
+        &lt;a onClick="var fade = new MyFade(); fade.FadeOut('RETRIEVE_ACCOUNT',0, 1, 'fade'); postData('window_close.php', '', 'window=RETRIEVE_ACCOUNT');" onMouseDown="mouse.dispensemove();"&gt;
+          Close
+        &lt;/a&gt;
+      &lt;/div&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      E-mail*:
+      &lt;br&gt;
+      &lt;input type="text" id="retrieve_account_email" name="retrieve_account_email" value="" size="50" onMouseDown="mouse.dispensemove();" onKeyUp="if(KeyCheck(event, 13))
+    </html>
+  </item>
+  <item>
+    <html>{UPDATE_COMMAND}</html>
+  </item>
+  <item>
+    <html>"&gt;&lt;br&gt;</html>
+  </item>
+  <item>
+    <html>
+      &lt;input type="button" id="retrieve_account_retrieve" name="retrieve_account_retrieve" value="Retrieve" onMouseDown="mouse.dispensemove();" onClick="
+    </html>
+  </item>
+  <item>
+    <html>{UPDATE_COMMAND}</html>
+  </item>
+  <item>
+    <html>"&gt;&lt;br&gt;</html>
+  </item>
+  <patTemplate:tmpl name="setTimeout">
+  <setTimeout>
+    <Command>{COMMAND}</Command>
+    <TimeOut>
+      {MILLISECONDS}
+    </TimeOut>
+  </setTimeout>
+  </patTemplate:tmpl>
+</xml>
+</patTemplate:tmpl>

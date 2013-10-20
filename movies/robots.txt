@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /images
+Sitemap: http://www.willemliu.nl/sitemap.xml

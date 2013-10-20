@@ -1,0 +1,168 @@
+<patTemplate:tmpl name="body">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xml>
+  <fileName>{FILE_NAME}</fileName>
+  <item>
+    <html>
+      &lt;div CLASS="WINDOW_BAR"&gt;
+        &lt;div class="WINDOW_TITLE"&gt;
+          My Settings
+        &lt;/div&gt;
+        &lt;a onClick="var fade = new MyFade(); fade.FadeOut('MY_SETTINGS',0, 1, 'fade'); postData('window_close.php', '', 'window=MY_SETTINGS');" onMouseDown="mouse.dispensemove();"&gt;
+          Close
+        &lt;/a&gt;
+      &lt;/div&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      First Name*:
+      &lt;br&gt;
+      &lt;input type="text" id="my_settings_first_name" name="first_name" value="{FIRST_NAME}" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('my_settings_update').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Last Name*:
+      &lt;br&gt;
+      &lt;input type="text" id="my_settings_last_name" name="last_name" value="{LAST_NAME}" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('my_settings_update').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      E-mail*:
+      &lt;br&gt;
+      &lt;input type="text" id="my_settings_email" name="email" value="{EMAIL}" size="50" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('my_settings_update').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Gender:
+      &lt;br&gt;
+      &lt;select id="my_settings_gender_id" name="gender_id" onMouseDown="mouse.dispensemove();"&gt;
+        <patTemplate:tmpl name="gender">
+    </html>
+  </item>
+  <item>
+    <html>
+        &lt;option value="{GENDER_ID}" {SELECTED}&gt;{GENDER}&lt;/option&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+        </patTemplate:tmpl>
+      &lt;/select&gt;
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Address:
+      &lt;br&gt;
+      &lt;input type="text" id="my_settings_address" name="address" value="{ADDRESS}" size="60" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('my_settings_update').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      City:
+      &lt;br&gt;
+      &lt;input type="text" id="my_settings_city" name="city" value="{CITY}" size="60" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('my_settings_update').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Country:
+      &lt;br&gt;
+      &lt;select id="my_settings_country_code" name="country_code" onMouseDown="mouse.dispensemove();"&gt;
+        <patTemplate:tmpl name="country">
+    </html>
+  </item>
+  <item>
+    <html>
+        &lt;option value="{COUNTRY_CODE}" {SELECTED}&gt;{COUNTRY}&lt;/option&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+        </patTemplate:tmpl>
+      &lt;/select&gt;
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Postal Code:
+      &lt;br&gt;
+      &lt;input type="text" id="my_settings_postal" name="postal" value="{POSTAL}" size="10" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('my_settings_update').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Phone:
+      &lt;br&gt;
+      &lt;input type="text" id="my_settings_phone" name="phone" value="{PHONE}" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('my_settings_update').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Mobile:
+      &lt;br&gt;
+      &lt;input type="text" id="my_settings_mobile" name="mobile" value="{MOBILE}" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('my_settings_update').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Nick Name*:
+      &lt;br&gt;
+      &lt;input type="text" id="my_settings_nick_name" name="nick_name" value="{NICK_NAME}" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('my_settings_update').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      User Name*:
+      &lt;br&gt;
+      &lt;input type="text" id="my_settings_user_name" name="user_name" value="{USER_NAME}" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('my_settings_update').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Old Password:
+      &lt;br&gt;
+      &lt;input type="password" id="my_settings_old_password" name="old_password" value="" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('my_settings_update').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      New Password:
+      &lt;br&gt;
+      &lt;input type="password" id="my_settings_new_password" name="new_password" value="" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('my_settings_update').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Repeat New Password:
+      &lt;br&gt;
+      &lt;input type="password" id="my_settings_new_password2" name="new_password2" value="" onMouseDown="mouse.dispensemove();" onKeyDown="if(KeyCheck(event, 13)) document.getElementById('my_settings_update').focus();"&gt;&lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;input type="button" id="my_settings_update" name="my_settings_update" value="Update" onMouseDown="mouse.dispensemove();" onClick="
+    </html>
+  </item>
+  <item>
+    <html>{UPDATE_COMMAND}</html>
+  </item>
+  <item>
+    <html>"&gt;&lt;br&gt;</html>
+  </item>
+  <patTemplate:tmpl name="setTimeout">
+  <setTimeout>
+    <Command>{COMMAND}</Command>
+    <TimeOut>
+      {MILLISECONDS}
+    </TimeOut>
+  </setTimeout>
+  </patTemplate:tmpl>
+</xml>
+</patTemplate:tmpl>

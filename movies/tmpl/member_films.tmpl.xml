@@ -1,0 +1,292 @@
+<patTemplate:tmpl name="body">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xml>
+  <fileName>{FILE_NAME}</fileName>
+  <item>
+    <html>
+      &lt;div CLASS="WINDOW_BAR"&gt;
+        &lt;div class="WINDOW_TITLE"&gt;
+          Films of {NICK_NAME}
+        &lt;/div&gt;
+        &lt;a onClick="var fade = new MyFade(); fade.FadeOut('MEMBER_FILMS',0, 1, 'fade'); postData('window_close.php', '', 'window=MEMBER_FILMS');" onMouseDown="mouse.dispensemove();"&gt;
+          Close
+        &lt;/a&gt;
+      &lt;/div&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Member nick name: {NICK_NAME}
+      &lt;br&gt;
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Search: &lt;input type="text" id="member_films_search_filter" name="member_films_search_filter" value="{SEARCH_FILTER}" size="60" onMouseDown="mouse.dispensemove();" onKeyUp="if(KeyCheck(event, 13)) postData('search_member_films.php', 'MEMBER_FILMS', 'search_filter=' + escape(encodeURI(document.getElementById('member_films_search_filter').value)) + '&amp;member_id=' + escape(encodeURI({ID})))"&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;input type="button" name="member_films_search_button" value="Search" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'search_filter=' + escape(encodeURI(document.getElementById('member_films_search_filter').value)) + '&amp;member_id=' + escape(encodeURI({ID})));"&gt;
+      &lt;br&gt;
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=a&amp;member_id=' + escape(encodeURI({ID})));"&gt;A&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=b&amp;member_id=' + escape(encodeURI({ID})));"&gt;B&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=c&amp;member_id=' + escape(encodeURI({ID})));"&gt;C&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=d&amp;member_id=' + escape(encodeURI({ID})));"&gt;D&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=e&amp;member_id=' + escape(encodeURI({ID})));"&gt;E&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=f&amp;member_id=' + escape(encodeURI({ID})));"&gt;F&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=g&amp;member_id=' + escape(encodeURI({ID})));"&gt;G&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=h&amp;member_id=' + escape(encodeURI({ID})));"&gt;H&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=i&amp;member_id=' + escape(encodeURI({ID})));"&gt;I&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=j&amp;member_id=' + escape(encodeURI({ID})));"&gt;J&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=k&amp;member_id=' + escape(encodeURI({ID})));"&gt;K&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=l&amp;member_id=' + escape(encodeURI({ID})));"&gt;L&lt;/a&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=m&amp;member_id=' + escape(encodeURI({ID})));"&gt;M&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=n&amp;member_id=' + escape(encodeURI({ID})));"&gt;N&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=o&amp;member_id=' + escape(encodeURI({ID})));"&gt;O&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=p&amp;member_id=' + escape(encodeURI({ID})));"&gt;P&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=q&amp;member_id=' + escape(encodeURI({ID})));"&gt;Q&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=r&amp;member_id=' + escape(encodeURI({ID})));"&gt;R&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=s&amp;member_id=' + escape(encodeURI({ID})));"&gt;S&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=t&amp;member_id=' + escape(encodeURI({ID})));"&gt;T&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=u&amp;member_id=' + escape(encodeURI({ID})));"&gt;U&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=v&amp;member_id=' + escape(encodeURI({ID})));"&gt;V&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=w&amp;member_id=' + escape(encodeURI({ID})));"&gt;W&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=x&amp;member_id=' + escape(encodeURI({ID})));"&gt;X&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=y&amp;member_id=' + escape(encodeURI({ID})));"&gt;Y&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=z&amp;member_id=' + escape(encodeURI({ID})));"&gt;Z&lt;/a&gt;
+      &lt;a onMouseDown="mouse.dispensemove();" onClick="postData('search_member_films.php', 'MEMBER_FILMS', 'char=other&amp;member_id=' + escape(encodeURI({ID})));"&gt;Other&lt;/a&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;table class="MEMBER_FILMS_TABLE" onMouseDown="mouse.dispensemove();"&gt;
+        &lt;tr&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_TITLE};"&gt;
+            Title
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_DURATION};"&gt;
+            Duration
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_MEDIUM};"&gt;
+            Medium
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_SOUND_MIX};"&gt;
+            Sound Mix
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_SUBTITLE};"&gt;
+            Subtitle
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_GENRE};"&gt;
+            Genre
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_REGION};"&gt;
+            Region
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_COLOR};"&gt;
+            Color
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_ASPECT_RATIO};"&gt;
+            Aspect Ratio
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MY_FILMS_TABLE_DATA" style="display: {SHOW_CAST};"&gt;
+            Cast
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_TRAILER};"&gt;
+            Trailer
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+        &lt;/tr&gt;
+    </html>
+  </item>
+  <patTemplate:tmpl name="show_rows" type="SimpleCondition" requiredVars="CONDITION">
+  <patTemplate:tmpl name="rows">
+  <item>
+    <html>
+        &lt;tr&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_TITLE};"&gt;
+            &lt;font color="#FF0000"&gt;{TITLE}&lt;/font&gt;
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_DURATION};"&gt;
+            {DURATION}
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_MEDIUM};"&gt;
+            {MEDIUM}
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_SOUND_MIX};"&gt;
+            {SOUND_MIX}
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_SUBTITLE};"&gt;
+            {SUBTITLE}
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_GENRE};"&gt;
+            {GENRE}
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_REGION};"&gt;
+            {REGION}
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_COLOR};"&gt;
+            {COLOR}
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_ASPECT_RATIO};"&gt;
+            {ASPECT_RATIO}
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_CAST};"&gt;
+            &lt;a onClick="postData('add_cast.php', 'ADD_CAST', 'film_id=' + escape(encodeURI({ID})));" title="Add Cast"&gt;[+]&lt;/a&gt;
+            &lt;br&gt;
+            &lt;a id="MEMBER_FILMS_SHOW_CAST_{ID}" onClick="this.style.display = 'none'; document.getElementById('MEMBER_FILMS_CAST_LIST_{ID}').style.display = 'block'; document.getElementById('MEMBER_FILMS_HIDE_CAST_{ID}').style.display = 'block'"&gt;
+            {HAS_CAST}
+            &lt;/a&gt;
+            &lt;div id="MEMBER_FILMS_CAST_LIST_{ID}" style="display: none;";&gt;
+            &lt;a id="MEMBER_FILMS_HIDE_CAST_{ID}" onClick="this.style.display = 'none'; document.getElementById('MEMBER_FILMS_CAST_LIST_{ID}').style.display = 'none'; document.getElementById('MEMBER_FILMS_SHOW_CAST_{ID}').style.display = 'block'"&gt;
+            [Hide Cast]
+            &lt;/a&gt;            
+    </html>
+  </item>
+  <item>
+    <html>
+            {CAST}
+    </html>
+  </item>
+  <item>
+    <html>
+            &lt;/div&gt;
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+          &lt;td class="MEMBER_FILMS_TABLE_DATA" style="display: {SHOW_TRAILER};"&gt;
+            &lt;a onClick="postData('add_trailer.php', 'ADD_TRAILER', 'film_id=' + escape(encodeURI({ID})));" title="Add Trailer"&gt;[+]&lt;/a&gt;
+            &lt;br&gt;
+            {TRAILER}
+          &lt;/td&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+        &lt;/tr&gt;
+    </html>
+  </item>
+  </patTemplate:tmpl>
+  </patTemplate:tmpl>
+  <item>
+    <html>
+      &lt;/table&gt;
+    </html>
+  </item>
+  <patTemplate:tmpl name="setTimeout">
+  <setTimeout>
+    <Command>{COMMAND}</Command>
+    <TimeOut>
+      {MILLISECONDS}
+    </TimeOut>
+  </setTimeout>
+  </patTemplate:tmpl>
+  <performance>
+    <parseTime>
+      {PARSE_TIME}
+    </parseTime>
+    <dbqueries>
+      {DB_QUERIES}
+    </dbqueries>
+  </performance>
+</xml>
+</patTemplate:tmpl>

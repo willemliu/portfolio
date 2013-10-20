@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>http://www.willemliu.nl/</loc>
+      <priority>1.0</priority>
+   </url>
+   <url>
+      <loc>http://willemliu.nl/news/</loc>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>http://www.willemliu.nl/photos</loc>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>http://www.willemliu.nl/videos</loc>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>http://www.willemliu.nl/easylist</loc>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>http://easylist.willemliu.nl/</loc>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>http://www.willemliu.nl/movies</loc>
+      <priority>0.9</priority>
+   </url>
+</urlset> 

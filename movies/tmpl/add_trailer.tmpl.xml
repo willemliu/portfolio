@@ -1,0 +1,71 @@
+<patTemplate:tmpl name="body">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xml>
+  <fileName>{FILE_NAME}</fileName>
+  <item>
+    <html>
+      &lt;div CLASS="WINDOW_BAR"&gt;
+        &lt;div class="WINDOW_TITLE"&gt;
+          Add Trailers
+        &lt;/div&gt;
+        &lt;a onClick="var fade = new MyFade(); fade.FadeOut('ADD_TRAILER',0, 1, 'fade'); postData('window_close.php', '', 'window=ADD_TRAILER');" onMouseDown="mouse.dispensemove();"&gt;
+          Close
+        &lt;/a&gt;
+      &lt;/div&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Movie: {FILM_TITLE}
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;br&gt;
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Title*:
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;input type="text" id="add_trailer_title" name="add_trailer_title" value="" size="50" onMouseDown="mouse.dispensemove();"&gt;
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      Trailer* (Embed):
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;textarea id="add_trailer_trailer" name="add_trailer_trailer" rows="5" cols="50" onMouseDown="mouse.dispensemove();"&gt;&lt;/textarea&gt;
+      &lt;br&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;input type="hidden" id="add_trailer_film_id" name="add_trailer_film_id" value="{FILM_ID}"&gt;
+    </html>
+  </item>
+  <item>
+    <html>
+      &lt;input type="button" id="add_trailer_add" name="add_trailer_add" value="Add" onClick="{UPDATE_COMMAND}" onMouseDown="mouse.dispensemove();"&gt;
+    </html>
+  </item>
+  <patTemplate:tmpl name="setTimeout">
+  <setTimeout>
+    <Command>{COMMAND}</Command>
+    <TimeOut>
+      {MILLISECONDS}
+    </TimeOut>
+  </setTimeout>
+  </patTemplate:tmpl>
+</xml>
+</patTemplate:tmpl>
