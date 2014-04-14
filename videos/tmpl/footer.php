@@ -87,6 +87,7 @@ echo <<< EOT
     }
   </script>
   <script src="js/willemliu.min.js"></script>
+  <script src="js/ga.js"></script>
   $footer
 </body>
 </html>

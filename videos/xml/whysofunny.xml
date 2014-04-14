@@ -23,6 +23,28 @@ version="2.0">
       <link>http://www.willemliu.nl/videos/</link>
     </image>
     <item>
+      <title><![CDATA[Hong Kong & Macau, 23 Dec 2013]]></title>
+      <link>http://www.willemliu.nl/videos/item.php?guid=wsf1830</link>
+      <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1830</comments>
+      <pubDate>Mon, 06 Jan 2014 18:58:00 +0200</pubDate>
+      <description><![CDATA[
+        Hong Kong & Macau.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        <div class="row">
+          <div class="large-12 columns">
+            <hr class="show-for-small"/>
+            <div><small>Music by: Yiruma</small></div>
+            <div><small>Song: Spring Rain</small></div>
+          </div>
+        </div>
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1830</guid>
+      <enclosure url="https://www.youtube.com/embed/LuxdJ6cw4uQ" length="0" type="html/youtube-url"/>
+    </item>
+    <item>
       <title><![CDATA[Wedding Bo & Jaron, 08 May 2013]]></title>
       <link>http://www.willemliu.nl/videos/item.php?guid=wsf1829</link>
       <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1829</comments>
