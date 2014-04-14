@@ -23,7 +23,7 @@
 echo <<< EOT
 	<div class="row">
 		<div class="large-12 columns">
-			<h2 id="firstStop">Videos</h2>
+			<h2 id="firstStop">Photos</h2>
 			<hr />
 		</div>
 	</div>

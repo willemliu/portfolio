@@ -50,11 +50,11 @@ echo <<< EOF
   <script src="js/facebook.js"></script>
   
   <div class="contain-to-grid fixed">
-    <nav class="top-bar">
+    <nav class="top-bar" data-topbar>
       <ul class="title-area">
         <!-- Title Area -->
-        <li class="name">
-          <a href="./" class="hasTransitionOut"><span class="liu breathing">廖</span></a>
+        <li class="name" onClick="window.location = '/'">
+          <a href="/" class="hasTransitionOut"><span class="liu breathing">廖</span></a>
         </li>
         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -64,7 +64,7 @@ echo <<< EOF
         <!-- Left Nav Section -->
         <ul class="left">
           <li class="divider"></li>
-          <li><a href="http://www.willemliu.nl">willemliu.nl</a></li>
+          <li><a href="/news">Reload</a></li>
         </ul>
       </section>
     </nav>

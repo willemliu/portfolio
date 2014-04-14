@@ -17,15 +17,11 @@
       <priority>0.9</priority>
    </url>
    <url>
-      <loc>http://www.willemliu.nl/easylist</loc>
-      <priority>0.9</priority>
-   </url>
-   <url>
       <loc>http://easylist.willemliu.nl/</loc>
       <priority>0.9</priority>
    </url>
    <url>
-      <loc>http://www.willemliu.nl/movies</loc>
+      <loc>http://movies.willemliu.nl/</loc>
       <priority>0.9</priority>
    </url>
 </urlset> 

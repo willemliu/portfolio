@@ -53,7 +53,7 @@ echo <<< EOF
     <nav class="top-bar">
       <ul class="title-area">
         <!-- Title Area -->
-        <li class="name">
+        <li class="name" onClick="window.location='/'">
           <a href="/" class="hasTransitionOut"><span class="liu breathing">廖</span></a>
         </li>
         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
@@ -76,7 +76,6 @@ echo <<< EOF
                   <li><a href="http://fd.nl" target="_BLANK" rel="nofollow">FD.nl</a></li>
                   <li><a href="http://bnr.nl" target="_BLANK" rel="nofollow">BNR.nl</a></li>
                   <li><a href="http://fdmg.nl" target="_BLANK" rel="nofollow">FDMG.nl</a></li>
-                  <li><a href="http://www.misterbubbletea.nl" target="_BLANK" rel="nofollow">MisterBubbleTea.nl</a></li>
                   <li><a href="http://www.karlijnscholten.nl" target="_BLANK" rel="nofollow">Karlijnscholten.nl</a></li>
                 </ul>
               </li>
@@ -84,10 +83,11 @@ echo <<< EOF
               <li class="has-dropdown"><a href="#">Personal projects</a>
                 <ul class="dropdown">
                   <li class="divider"></li>
-                  <li><a href="http://willemliu.nl/easylist" target="_BLANK">EasyList</a></li>
-                  <li><a href="http://willemliu.nl/movies" target="_BLANK">My Movie Database</a></li>
-                  <li><a href="http://willemliu.nl/games" target="_BLANK">Games Website</a></li>
-                  <li><a href="http://willemliu.nl/ibood" target="_BLANK">iBood Hunt Checker</a></li>
+                  <li><a href="https://www.pozzy.nl/" target="_BLANK">Pozzy</a></li>
+                  <li><a href="http://www.willim.nl/" target="_BLANK">WilliM</a></li>
+                  <li><a href="http://easylist.willemliu.nl/" target="_BLANK">EasyList</a></li>
+                  <li><a href="http://movies.willemliu.nl/" target="_BLANK">My Movie Database</a></li>
+                  <li><a href="http://games.willemliu.nl/" target="_BLANK">Games Website</a></li>
                 </ul>
               </li>
             </ul>
@@ -137,9 +137,9 @@ echo <<< EOF
             </ul>
           </li>
           <li class="divider"></li>
-          <li><a href="/photos/" class="hasTransitionOut">Photography</a></li>
+          <li onClick="window.location='/photos'"><a href="/photos/" class="hasTransitionOut">Photography</a></li>
           <li class="divider"></li>
-          <li><a href="/videos/" class="hasTransitionOut">Videos</a></li>
+          <li onClick="window.location='/videos'"><a href="/videos/" class="hasTransitionOut">Videos</a></li>
           <li class="divider"></li>
         </ul>
 

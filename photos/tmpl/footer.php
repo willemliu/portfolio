@@ -38,11 +38,7 @@ echo <<< EOT
       </div>
     </div>
 
-  <script>
-    document.write('<script src=' +
-    ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-    '.js><\/script>')
-  </script>
+  <script src="js/willemliu.min.js"></script>
   <script>
     $(document).ready(function(){
       $('.backToTop').click(function () {
@@ -86,7 +82,6 @@ echo <<< EOT
       });
     }
   </script>
-  <script src="js/willemliu.min.js"></script>
   $footer
 </body>
 </html>
