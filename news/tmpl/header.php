@@ -63,7 +63,7 @@ echo <<< EOF
         <!-- Left Nav Section -->
         <ul class="left">
           <li class="divider"></li>
-          <li><a href="{$protocol}://{$_SERVER["SERVER_NAME"]}/news">Reload</a></li>
+          <li><a href="{$protocol}://{$_SERVER["SERVER_NAME"]}/news">News</a></li>
           <li class="divider"></li>
           <li class="has-dropdown"><a href="#">Websites</a>
 
@@ -75,7 +75,6 @@ echo <<< EOF
                   <li><a href="http://fd.nl" target="_BLANK" rel="nofollow">FD.nl</a></li>
                   <li><a href="http://bnr.nl" target="_BLANK" rel="nofollow">BNR.nl</a></li>
                   <li><a href="http://fdmg.nl" target="_BLANK" rel="nofollow">FDMG.nl</a></li>
-                  <li><a href="http://www.misterbubbletea.nl" target="_BLANK" rel="nofollow">MisterBubbleTea.nl</a></li>
                   <li><a href="http://www.karlijnscholten.nl" target="_BLANK" rel="nofollow">Karlijnscholten.nl</a></li>
                 </ul>
               </li>
@@ -83,10 +82,11 @@ echo <<< EOF
               <li class="has-dropdown"><a href="#">Personal projects</a>
                 <ul class="dropdown">
                   <li class="divider"></li>
+                  <li><a href="https://www.pozzy.nl/" target="_BLANK">Pozzy</a></li>
+                  <li><a href="http://www.willim.nl" target="_BLANK">WilliM</a></li>
                   <li><a href="http://willemliu.nl/easylist" target="_BLANK">EasyList</a></li>
                   <li><a href="http://willemliu.nl/movies" target="_BLANK">My Movie Database</a></li>
                   <li><a href="http://willemliu.nl/games" target="_BLANK">Games Website</a></li>
-                  <li><a href="http://willemliu.nl/ibood" target="_BLANK">iBood Hunt Checker</a></li>
                 </ul>
               </li>
             </ul>
@@ -136,9 +136,9 @@ echo <<< EOF
             </ul>
           </li>
           <li class="divider"></li>
-          <li><a href="{$protocol}://{$_SERVER["SERVER_NAME"]}/photos" class="hasTransitionOut">Photography</a></li>
+          <li onClick="window.location='{$protocol}://{$_SERVER["SERVER_NAME"]}/photos'"><a href="{$protocol}://{$_SERVER["SERVER_NAME"]}/photos" class="hasTransitionOut">Photography</a></li>
           <li class="divider"></li>
-          <li><a href="{$protocol}://{$_SERVER["SERVER_NAME"]}/videos" class="hasTransitionOut">Videos</a></li>
+          <li onClick="window.location='{$protocol}://{$_SERVER["SERVER_NAME"]}/videos'"><a href="{$protocol}://{$_SERVER["SERVER_NAME"]}/videos" class="hasTransitionOut">Videos</a></li>
           <li class="divider"></li>
         </ul>
 
