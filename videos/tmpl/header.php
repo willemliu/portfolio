@@ -9,9 +9,10 @@ if(isset($relPrev) === false)
   $relPrev = "";
 }
 
-$protocol = strtolower(array_shift(explode("/",$_SERVER['SERVER_PROTOCOL'])));
+
 
 echo <<< EOF
+
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -50,11 +51,11 @@ echo <<< EOF
   <script src="js/facebook.js"></script>
   
   <div class="contain-to-grid fixed">
-    <nav class="top-bar">
+    <nav class="top-bar" data-topbar>
       <ul class="title-area">
         <!-- Title Area -->
-        <li class="name" onClick="window.location='{$protocol}://{$_SERVER["SERVER_NAME"]}'">
-          <a href="{$protocol}://{$_SERVER["SERVER_NAME"]}" class="hasTransitionOut"><span class="liu breathing">廖</span></a>
+        <li class="name" onClick="window.location='/'">
+          <a href="/" class="hasTransitionOut"><span class="liu breathing">廖</span></a>
         </li>
         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -64,7 +65,8 @@ echo <<< EOF
         <!-- Left Nav Section -->
         <ul class="left">
           <li class="divider"></li>
-          <li><a href="{$protocol}://{$_SERVER["SERVER_NAME"]}/news">News</a></li>
+
+          <li onClick="window.location='/news'"><a href="/news">News</a></li>
           <li class="divider"></li>
           <li class="has-dropdown"><a href="#">Websites</a>
 
@@ -137,9 +139,9 @@ echo <<< EOF
             </ul>
           </li>
           <li class="divider"></li>
-          <li onClick="window.location='{$protocol}://{$_SERVER["SERVER_NAME"]}/photos'"><a href="{$protocol}://{$_SERVER["SERVER_NAME"]}/photos/" class="hasTransitionOut">Photography</a></li>
+          <li onClick="window.location='/photos'"><a href="/photos/" class="hasTransitionOut">Photography</a></li>
           <li class="divider"></li>
-          <li onClick="window.location='{$protocol}://{$_SERVER["SERVER_NAME"]}/videos'"><a href="{$protocol}://{$_SERVER["SERVER_NAME"]}/videos/" class="hasTransitionOut">Videos</a></li>
+          <li onClick="window.location='/videos'"><a href="/videos/" class="hasTransitionOut">Videos</a></li>
           <li class="divider"></li>
         </ul>
 

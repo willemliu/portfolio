@@ -23,6 +23,38 @@ version="2.0">
       <link>http://www.willemliu.nl/videos/</link>
     </image>
     <item>
+      <title><![CDATA[Wedding of Cheryl & Lennard, 06 Sep 2014]]></title>
+      <link>http://www.willemliu.nl/videos/item.php?guid=wsf1831</link>
+      <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1831</comments>
+      <pubDate>Sat, 10 Nov 2014 19:58:00 +0200</pubDate>
+      <description><![CDATA[
+        Wedding of Cheryl & Lennard
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        <div class="row">
+          <div class="large-4 columns">
+            <hr class="show-for-small"/>
+            <div><small>Music by: Pachelbel</small></div>
+            <div><small>Song: Canon in D Major</small></div>
+          </div>
+          <div class="large-4 columns">
+            <hr class="show-for-small"/>
+            <div><small>Music by: Katrina and the Waves</small></div>
+            <div><small>Song: Walking on Sunshine</small></div>
+          </div>
+          <div class="large-4 columns">
+            <hr class="show-for-small"/>
+            <div><small>Music by: John Legend</small></div>
+            <div><small>Song: All of me</small></div>
+          </div>
+        </div>
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1831</guid>
+      <enclosure url="https://www.youtube.com/embed/videoseries?list=PLa4l_assvS-WN7VwyPtXKFe4YfwlreiJu" length="0" type="html/youtube-url"/>
+    </item>
+    <item>
       <title><![CDATA[Hong Kong & Macau, 23 Dec 2013]]></title>
       <link>http://www.willemliu.nl/videos/item.php?guid=wsf1830</link>
       <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1830</comments>
@@ -139,7 +171,7 @@ version="2.0">
       </description>
       <content:encoded><![CDATA[
         <hr class="show-for-small"/>
-        <div><small>Music by: <a href="http://www.kolo-band.com/" rel="nofollow" target="_BLANK">KOLO</a></small></div>
+        <div><small><a href="http://www.kolo-band.com/" rel="nofollow" target="_BLANK">Music by: KOLO</a></small></div>
         <div><small>Song: Castro</small></div>
         ]]>
       </content:encoded>
