@@ -26,9 +26,14 @@ version="2.0">
       <title><![CDATA[Wedding of Cheryl & Lennard, 06 Sep 2014]]></title>
       <link>http://www.willemliu.nl/videos/item.php?guid=wsf1831</link>
       <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1831</comments>
-      <pubDate>Sat, 10 Nov 2014 19:58:00 +0200</pubDate>
+      <pubDate>Sat, 10 Oct 2014 19:58:00 +0200</pubDate>
       <description><![CDATA[
-        Wedding of Cheryl & Lennard
+        <p>I was given the honor of documenting the happiest day of Cheryl and Lennard.</p>
+        <p>Below you can find two of the videos which I've created from the footage taken at that day.</p>
+        <p>I also found myself obligated to make something special out of it. So I've
+        ordered an engraved wooden DVD box to hold their wedding digital video disc. You can see
+        photos of the final product below.
+        </p>
         ]]>
       </description>
       <content:encoded><![CDATA[
@@ -53,6 +58,10 @@ version="2.0">
       </content:encoded>
       <guid isPermaLink="false">wsf1831</guid>
       <enclosure url="https://www.youtube.com/embed/videoseries?list=PLa4l_assvS-WN7VwyPtXKFe4YfwlreiJu" length="0" type="html/youtube-url"/>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/P1000623.JPG" length="0" type="image/jpeg"/>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/P1000625.JPG" length="0" type="image/jpeg"/>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/P1000627.JPG" length="0" type="image/jpeg"/>
+      <enclosure url="http://www.willemliu.nl/photos/img/photos/P1000628.JPG" length="0" type="image/jpeg"/>
     </item>
     <item>
       <title><![CDATA[Hong Kong & Macau, 23 Dec 2013]]></title>

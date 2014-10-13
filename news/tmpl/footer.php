@@ -39,10 +39,7 @@ echo <<< EOT
     </div>
 
   <script src="js/willemliu.min.js"></script>
-<<<<<<< HEAD
-=======
   <script src="js/ga.js"></script>
->>>>>>> Cleaned up a bit.
   $footer
 </body>
 </html>
