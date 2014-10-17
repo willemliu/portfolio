@@ -1,7 +1,7 @@
 Portfolio
 =========
 
-This is a basic portfolio website created for Willem Liu, no content management, no layout management, no fancy stuff in particular.
+This is a basic portfolio website created for [Willem Liu](http://www.willemliu.nl), no content management, no layout management, no fancy stuff in particular.
 
 ## Components
 The portfolio website consists of 4 separate components.
