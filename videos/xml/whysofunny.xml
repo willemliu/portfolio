@@ -23,6 +23,27 @@ version="2.0">
       <link>http://www.willemliu.nl/videos/</link>
     </image>
     <item>
+      <title><![CDATA[Sinterkerst, 12 December 2014]]></title>
+      <link>http://www.willemliu.nl/videos/item.php?guid=wsf1832</link>
+      <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1832</comments>
+      <pubDate>Tue, 16 Dec 2014 20:37:00 +0200</pubDate>
+      <description><![CDATA[
+          Between the Dutch holiday called Sinterklaas and Christmas my friends and I went away for the weekend.<br/>
+          During that weekend we enjoyed each others company while playing many boardgames.
+          But this time we wanted to make a scary movie instead.
+          There is more fun stuff after the credits.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        <hr class="show-for-small"/>
+        <div><small>Music by: Alan Jackson</small></div>
+        <div><small>Song: Let it be christmas</small></div>
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1827</guid>
+      <enclosure url="http://player.vimeo.com/video/114699261" length="0" type="html/vimeo-url"/>
+    </item>
+    <item>
       <title><![CDATA[Wedding of Cheryl & Lennard, 06 Sep 2014]]></title>
       <link>http://www.willemliu.nl/videos/item.php?guid=wsf1831</link>
       <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1831</comments>
