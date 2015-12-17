@@ -86,6 +86,7 @@ echo <<< EOF
                   <li><a href="https://www.moviesom.com/" target="_BLANK">MovieSom</a></li>
                   <li><a href="https://www.pozzy.nl/" target="_BLANK">Pozzy</a></li>
                   <li><a href="http://www.willim.nl/" target="_BLANK">WilliM</a></li>
+                  <li><a href="http://fooddie.willim.nl/" target="_BLANK">FoodDie</a></li>
                   <li><a href="http://easylist.willemliu.nl/" target="_BLANK">EasyList</a></li>
                   <li><a href="http://games.willemliu.nl/" target="_BLANK">Games Website</a></li>
                 </ul>
