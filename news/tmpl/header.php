@@ -85,6 +85,7 @@ echo <<< EOF
                   <li><a href="https://www.moviesom.com/" target="_BLANK">MovieSom</a></li>
                   <li><a href="https://www.pozzy.nl/" target="_BLANK">Pozzy</a></li>
                   <li><a href="http://www.willim.nl" target="_BLANK">WilliM</a></li>
+                  <li><a href="http://poker.willim.nl" target="_BLANK">WilliM PlanningPoker</a></li>
                   <li><a href="http://fooddie.willim.nl" target="_BLANK">FoodDie</a></li>
                   <li><a href="http://willemliu.nl/easylist" target="_BLANK">EasyList</a></li>
                   <li><a href="http://willemliu.nl/games" target="_BLANK">Games Website</a></li>
@@ -140,6 +141,8 @@ echo <<< EOF
           <li onClick="window.location='{$protocol}://{$_SERVER["SERVER_NAME"]}/photos'"><a href="{$protocol}://{$_SERVER["SERVER_NAME"]}/photos" class="hasTransitionOut">Photography</a></li>
           <li class="divider"></li>
           <li onClick="window.location='{$protocol}://{$_SERVER["SERVER_NAME"]}/videos'"><a href="{$protocol}://{$_SERVER["SERVER_NAME"]}/videos" class="hasTransitionOut">Videos</a></li>
+          <li class="divider"></li>
+          <li><a href="https://github.com/willemliu" class="hasTransitionOut">Github</a></li>
           <li class="divider"></li>
         </ul>
 
