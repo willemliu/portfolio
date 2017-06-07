@@ -9,7 +9,7 @@
   $keywords = "willem liu, news, rss, feed";
   $image = "http://www.willemliu.nl/img/me.jpg";
   $url = "http://www.willemliu.nl";
-  $xmlUrl = "http://nu.nl/rss";
+  $xmlUrl = "http://www.reddit.com/r/movies/.rss";
   include_once("tmpl/header.php");
   include_once("tmpl/home.php");
   include_once("tmpl/footer.php");

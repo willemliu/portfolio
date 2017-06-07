@@ -4,7 +4,7 @@
   $maxItemsPerPage = 5;
   $footer = "";
   
-  $file_or_url = "http://pipes.yahoo.com/pipes/pipe.run?_id=964c0b1f5d6ca72a996f568424755dec&_render=rss";
+  $file_or_url = $xmlUrl;
   if(!preg_match('/^http:/i', $file_or_url))
       $feed_uri = './xml/'. $file_or_url;
   else
@@ -115,7 +115,7 @@ $footer .= <<< EOT
     $(document.body).on('appear', '.infiniteScroll', function(e) {
       console.log("load next page");
       $(document.body).off('appear', '.infiniteScroll');
-      showMoreResults("getNextPage.php?offset=$offset");
+      showMoreResults("getNextPage.php?offset=$offset&xmlUrl=$file_or_url");
     });
   </script>
 EOT;
