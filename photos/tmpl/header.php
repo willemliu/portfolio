@@ -9,9 +9,9 @@ if(isset($relPrev) === false)
   $relPrev = "";
 }
 
+$protocol = strtolower(array_shift(explode("/",$_SERVER['SERVER_PROTOCOL'])));
 
 echo <<< EOF
-
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -27,11 +27,11 @@ echo <<< EOF
   <meta property="og:site_name" content="$title"/>
   <meta property="og:description" content="$description"/>
   <meta property="og:url" content="$url"/>
-  <meta name="twitter:card" content="photo">
+  <meta name="twitter:card" content="$twitterCard">
   <meta name="twitter:url" content="$url">
   <meta name="twitter:title" content="$title">
   <meta name="twitter:description" content="$description">
-  <meta name="twitter:image:src" content="$image">
+  <meta name="twitter:image" content="$image">
   <meta name="twitter:site" content="@willemliu">
   <meta name="twitter:creator" content="@willemliu">
   <link rel="image_src" href="$image" />
@@ -53,9 +53,8 @@ echo <<< EOF
     <nav class="top-bar" data-topbar>
       <ul class="title-area">
         <!-- Title Area -->
-        <li class="name" onClick="window.location='/'">
-          <a href="/" class="hasTransitionOut"><span class="liu breathing">廖</span></a>
-        </li>
+        <li class="name" onClick="window.location = '{$protocol}://{$_SERVER["SERVER_NAME"]}'">
+          <a href="{$protocol}://{$_SERVER["SERVER_NAME"]}" class="hasTransitionOut"><span class="liu breathing">廖</span></a>
         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
@@ -64,7 +63,7 @@ echo <<< EOF
         <!-- Left Nav Section -->
         <ul class="left">
           <li class="divider"></li>
-          <li onClick="window.location='/news'"><a href="/news">News</a></li>
+          <li><a href="{$protocol}://{$_SERVER["SERVER_NAME"]}/news">News</a></li>
           <li class="divider"></li>
           <li class="has-dropdown"><a href="#">Websites</a>
 
@@ -85,11 +84,9 @@ echo <<< EOF
                   <li class="divider"></li>
                   <li><a href="https://www.moviesom.com/" target="_BLANK">MovieSom</a></li>
                   <li><a href="https://www.pozzy.nl/" target="_BLANK">Pozzy</a></li>
-                  <li><a href="http://www.willim.nl/" target="_BLANK">WilliM</a></li>
-                  <li><a href="http://poker.willim.nl/" target="_BLANK">WilliM PlanningPoker</a></li>
-                  <li><a href="http://fooddie.willim.nl/" target="_BLANK">FoodDie</a></li>
-                  <li><a href="http://easylist.willemliu.nl/" target="_BLANK">EasyList</a></li>
-                  <li><a href="http://games.willemliu.nl/" target="_BLANK">Games Website</a></li>
+                  <li><a href="http://www.willim.nl" target="_BLANK">WilliM</a></li>
+                  <li><a href="http://poker.willim.nl" target="_BLANK">WilliM PlanningPoker</a></li>
+                  <li><a href="http://fooddie.willim.nl" target="_BLANK">FoodDie</a></li>
                 </ul>
               </li>
             </ul>
@@ -139,9 +136,9 @@ echo <<< EOF
             </ul>
           </li>
           <li class="divider"></li>
-          <li onClick="window.location='/photos'"><a href="/photos/" class="hasTransitionOut">Photography</a></li>
+          <li onClick="window.location='{$protocol}://{$_SERVER["SERVER_NAME"]}/photos'"><a href="{$protocol}://{$_SERVER["SERVER_NAME"]}/photos" class="hasTransitionOut">Photography</a></li>
           <li class="divider"></li>
-          <li onClick="window.location='/videos'"><a href="/videos/" class="hasTransitionOut">Videos</a></li>
+          <li onClick="window.location='{$protocol}://{$_SERVER["SERVER_NAME"]}/videos'"><a href="{$protocol}://{$_SERVER["SERVER_NAME"]}/videos" class="hasTransitionOut">Videos</a></li>
           <li class="divider"></li>
           <li><a href="https://github.com/willemliu" class="hasTransitionOut">Github</a></li>
           <li class="divider"></li>
@@ -164,6 +161,6 @@ echo <<< EOF
     </nav>
   </div>
 
-  <div class="top-bar-dummy">&nbsp;</div>  
+  <div class="top-bar-dummy">&nbsp;</div>
 EOF;
 ?>
