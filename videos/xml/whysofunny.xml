@@ -23,6 +23,24 @@ version="2.0">
       <link>http://www.willemliu.nl/videos/</link>
     </image>
     <item>
+      <title><![CDATA[KOLO - Hamburg (live), 11 June 2016]]></title>
+      <link>http://www.willemliu.nl/videos/item.php?guid=wsf1833</link>
+      <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1833</comments>
+      <pubDate>Sat, 11 Jun 2016 00:00:00 +0200</pubDate>
+      <description><![CDATA[
+          KOLO was so kind to invite me to film their performance as support for 3 Doors Down in the Porsche Arena, Stuttgart in 2016.
+        ]]>
+      </description>
+      <content:encoded><![CDATA[
+        <hr class="show-for-small"/>
+        <div><small>Music by: KOLO</small></div>
+        <div><small>Song: Hamburg</small></div>
+        ]]>
+      </content:encoded>
+      <guid isPermaLink="false">wsf1833</guid>
+      <enclosure url="https://www.youtube.com/watch?v=FTTCEH1etrE" length="0" type="html/youtube-url"/>
+    </item>
+    <item>
       <title><![CDATA[Sinterkerst, 12 December 2014]]></title>
       <link>http://www.willemliu.nl/videos/item.php?guid=wsf1832</link>
       <comments>http://www.willemliu.nl/videos/item.php?guid=wsf1832</comments>
@@ -40,7 +58,7 @@ version="2.0">
         <div><small>Song: Let it be christmas</small></div>
         ]]>
       </content:encoded>
-      <guid isPermaLink="false">wsf1827</guid>
+      <guid isPermaLink="false">wsf1832</guid>
       <enclosure url="http://player.vimeo.com/video/114699261" length="0" type="html/vimeo-url"/>
     </item>
     <item>
