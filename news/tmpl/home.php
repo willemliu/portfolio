@@ -5,7 +5,7 @@
   $footer = "";
   
   $file_or_url = $xmlUrl;
-  if(!preg_match('/^http:/i', $file_or_url))
+  if(!preg_match('/^https?:/i', $file_or_url))
       $feed_uri = './xml/'. $file_or_url;
   else
       $feed_uri = $file_or_url;
